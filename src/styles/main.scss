@@ -1,0 +1,27 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: calc(100vw / 1920 * 10);
+  line-height: normal;
+}
+
+#app, #app > * {
+  height: inherit;
+}
+
+.wrapper {
+  max-width: 157rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.label {
+  color: var(--color-default);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 2rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
