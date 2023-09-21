@@ -6,17 +6,24 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 module.exports = {
     devtool: "inline-source-map",
     entry: "./index.tsx",
-    //mode: "production",
-    mode: "development",
+    output: {
+        publicPath: '',
+        path: path.join(__dirname, '/dist/'),
+        filename: '[name].bundle.js',
+        clean: true
+    },
     devServer: {
-        static: "./dist",
+        // static: "./dist",
         hot: true,
         port: 3000,
-        historyApiFallback: {index: "/", disableDotRule: true},
+        historyApiFallback: true,
     },
     plugins: [
         new CopyWebpackPlugin({
-            patterns: [{from: "./src/assets", to: "assets"}, {from: "./public", to: "./"}]
+            patterns: [
+                {from: "./src/assets", to: "./assets"},
+                {from: "./public", to: "./"}
+            ]
         }),
     ],
     module: {
@@ -87,10 +94,4 @@ module.exports = {
         extensions: [".tsx", ".ts", ".js"],
         modules: [path.resolve(__dirname, "node_modules")]
     },
-    output: {
-        filename: "[name].bundle.js",
-        path: path.resolve(__dirname, "dist"),
-        publicPath: '',
-        clean: true
-    }
 };
