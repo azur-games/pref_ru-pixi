@@ -1,0 +1,12 @@
+._ {
+  padding: 12rem 0;
+
+  p {
+    @include text-light;
+    margin-bottom: 2rem;
+
+    @media (max-width: 767px) {
+      font-size: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@mixin font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+@mixin font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin button {
+  color: rgb(255, 255, 255);
+  border-radius: .8rem;
+  text-transform: uppercase;
+}
+
+@mixin button-hover {
+  transition: .3s ease-out;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+@mixin text-light {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: #646464;
+}

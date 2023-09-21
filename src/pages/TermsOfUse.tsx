@@ -1,6 +1,13 @@
+import Header from "./terms_of_use/Header";
+import Main from "./terms_of_use/Main";
+
+
 function TermsOfUse() {
     return (
-        <div>Terms of use</div>
+        <div>
+            <Header/>
+            <Main/>
+        </div>
     );
 }
 

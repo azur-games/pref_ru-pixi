@@ -1,0 +1,31 @@
+._ {
+  color: #fff;
+  position: relative;
+  padding-left: 3.5rem;
+
+  @media (min-width: 1024px) {
+    flex: 1 0 50rem;
+  }
+}
+
+.title {
+  @include font-poppins;
+  font-size: 2.2rem;
+  margin-bottom: .8rem;
+}
+
+.text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: .5rem;
+  width: 2.2rem;
+
+  path {
+    fill: #fff;
+  }
+}

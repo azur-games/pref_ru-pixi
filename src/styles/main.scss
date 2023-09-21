@@ -1,7 +1,15 @@
+@import 'mixins.scss';
+
 html {
   font-family: "Roboto", sans-serif;
-  font-size: calc(100vw / 1920 * 10);
-  line-height: normal;
+
+  @media (max-width: 767px) {
+    font-size: calc(100vw / 1920 * 35);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 10px;
+  }
 }
 
 #app, #app > * {
@@ -9,19 +17,20 @@ html {
 }
 
 .wrapper {
-  max-width: 157rem;
+  max-width: var(--wrapper);
+  padding: 0 5%;
   width: 100%;
   margin: 0 auto;
 }
 
-.label {
-  color: var(--color-default);
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: normal;
-  padding-left: 2rem;
+.title {
+  @include font-poppins;
+  font-size: 3.9rem;
+  line-height: 1;
 }
 
-.flex-grow {
-  flex-grow: 1;
+.text-default {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.6rem;
 }
