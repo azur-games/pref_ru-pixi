@@ -4,7 +4,7 @@ html {
   font-family: "Roboto", sans-serif;
 
   @media (max-width: 767px) {
-    font-size: calc(100vw / 1920 * 35);
+    font-size: calc(100vw / 1920 * 50);
   }
 
   @media (min-width: 768px) {
@@ -27,6 +27,10 @@ html {
   @include font-poppins;
   font-size: 3.9rem;
   line-height: 1;
+
+  @media(max-width: 767px) {
+    font-size: 3rem;
+  }
 }
 
 .text-default {

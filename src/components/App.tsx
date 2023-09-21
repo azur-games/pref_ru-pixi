@@ -1,16 +1,16 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import TermsOfUse from "../pages/TermsOfUse";
 
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route index element={<HomePage/>}/>
                 <Route path={'/terms_of_use'} element={<TermsOfUse/>}/>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 

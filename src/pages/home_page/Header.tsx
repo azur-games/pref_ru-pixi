@@ -8,7 +8,7 @@ function Header() {
         <header className={s._}>
             <div className={classNames(s.container, 'wrapper')}>
                 <h1 className={s.title}>Преферанс: игра в карты онлайн</h1>
-                <button type="button" className={s.button}>ИГРАТЬ ОНЛАЙН</button>
+                <a href="/play" className={s.button}>ИГРАТЬ ОНЛАЙН</a>
 
                 <img src={macbook} alt="macbook" className={s.image}/>
             </div>
