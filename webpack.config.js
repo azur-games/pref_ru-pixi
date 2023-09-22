@@ -6,6 +6,7 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 module.exports = {
     devtool: "inline-source-map",
     entry: "./index.tsx",
+    // mode: "development",
     output: {
         publicPath: '',
         path: path.join(__dirname, '/dist/'),
