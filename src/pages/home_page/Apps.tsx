@@ -12,7 +12,7 @@ function Apps() {
                     <img src={devices} alt="devices"/>
                 </div>
 
-                <div className={s.apps_container}>
+                <div className={s.apps_container} id="apps">
                     <h2 className="title">
                         У вас смартфон или планшет <br/> на Android или iOS?</h2>
                     <p className="text-default">

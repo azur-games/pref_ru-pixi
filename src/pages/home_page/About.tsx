@@ -6,7 +6,7 @@ import s from "./about/About.module.scss";
 
 function About() {
     return (
-        <section className={s._}>
+        <section className={s._} id="section-about">
             <div className={classNames(s.container, "wrapper")}>
                 <img src={macbook} alt="macbook" className={s.image}/>
 

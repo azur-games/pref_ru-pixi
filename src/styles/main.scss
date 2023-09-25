@@ -2,6 +2,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 
   @media (max-width: 767px) {
     font-size: calc(100vw / 1920 * 50);

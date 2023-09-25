@@ -4,7 +4,7 @@ import s from "./tutorial/Tutorial.module.scss";
 
 function Tutorial() {
     return (
-        <section className={s._}>
+        <section className={s._} id="section-tutorial">
             <div className={classNames(s.container, 'wrapper')}>
                 <div className={s.text_container}>
                     <h2 className={classNames(s.title, 'title')}>
