@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import Burger from "../../components/Burger";
+import onPlay from "../../utils/onPlay";
 import useNav from "./nav/_hooks/useNav";
 import s from "./nav/Nav.module.scss";
 import {UseNav} from "./nav/NavTypes";
@@ -18,7 +19,9 @@ function Nav() {
 
             <nav className={s.nav}>
                 <ul>
-                    <li><a href="/play">Играть</a></li>
+                    <li>
+                        <button type="button" onClick={onPlay}>Играть</button>
+                    </li>
                     <li><a onClick={onClickBurger} href="#apps">Скачать</a></li>
                     <li><a onClick={onClickBurger} href="#section-tutorial">Обучение</a></li>
                     <li><a onClick={onClickBurger} href="#section-about">О нас</a></li>

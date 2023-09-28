@@ -1,4 +1,3 @@
-import * as process from "process";
 import {createBrowserRouter, Outlet, RouterProvider, ScrollRestoration} from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import TermsOfUse from "../pages/TermsOfUse";
@@ -30,9 +29,7 @@ let routes = [
     },
 ];
 
-const router = createBrowserRouter(routes, {
-    basename: process.env.NODE_ENV === 'production' ? '/site_demo' : ''
-});
+const router = createBrowserRouter(routes);
 
 function App() {
     return (

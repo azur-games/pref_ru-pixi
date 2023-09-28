@@ -29,15 +29,17 @@
     align-items: center;
     gap: 5rem;
     color: #fff;
-    font-size: 1.6rem;
   }
 
-  li a {
+  li > * {
+    color: #fff;
+    font-size: 1.6rem;
     padding: 1rem;
     transition: .2s ease-out;
+    filter: drop-shadow(.2rem .4rem .6rem var(--color-shadow));
 
     &:hover {
-      text-shadow: 0 .2rem .5rem var(--color-shadow);
+      filter: drop-shadow(.2rem .4rem .6rem var(--color-shadow)) opacity(.5);
     }
   }
 }

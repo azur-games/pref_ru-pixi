@@ -48,10 +48,11 @@
 .button {
   @include button;
   @include button-hover;
+  border-radius: .3em;
   padding: 4vw 8vw;
   font-weight: 500;
   font-size: 3vw;
-  //box-shadow: #49ae52 0 .5rem 2rem 0;
+  box-shadow: var(--color-shadow) 0 .5rem 2rem 0;
   background-color: #49ae52;
   overflow: hidden;
   z-index: 1;

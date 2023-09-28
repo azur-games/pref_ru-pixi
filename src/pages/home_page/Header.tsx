@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import onPlay from "../../utils/onPlay";
 import s from './header/Header.module.scss';
 
 
@@ -15,7 +16,7 @@ function Header() {
             />
             <div className={classNames(s.container, 'wrapper')}>
                 <h1 className={s.title}>Преферанс: игра в карты онлайн</h1>
-                <a href="/play" className={s.button}><span>ИГРАТЬ ОНЛАЙН</span></a>
+                <button type="button" onClick={onPlay} className={s.button}><span>ИГРАТЬ ОНЛАЙН</span></button>
             </div>
         </header>
     );

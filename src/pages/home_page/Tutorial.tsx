@@ -17,9 +17,9 @@ function Tutorial() {
                     <video
                         className="elementor-video"
                         controls
-                        src="https://pref.ru/wp-content/uploads/2021/12/Как-Играть-в-ПРЕФЕРАНС-_-Карточные-Игры-Преферанс-Обучение-_-Правила-Игры-в-Преф.mp4"
+                        src="assets/video/how_to_play.mp4"
                         controlsList="nodownload"
-                        poster="https://pref.ru/wp-content/uploads/2021/12/Преферанс-1.png"
+                        poster="assets/images/Преферанс-1.png"
                     />
                 </div>
             </div>
