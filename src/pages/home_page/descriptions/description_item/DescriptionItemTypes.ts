@@ -1,4 +1,8 @@
+import {ReactNode} from "react";
+
+
 export type TDescriptionItem = {
+    icon: ReactNode
     title: string
     text: string
 }

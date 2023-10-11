@@ -1,15 +1,3 @@
-@mixin button {
-
-}
-
-@mixin button-hover {
-  transition: .3s ease-out;
-
-  &:hover {
-    transform: scale(0.9);
-  }
-}
-
 @mixin text-light {
   font-size: 1.6rem;
   line-height: 3rem;
@@ -19,6 +7,10 @@
 
 @mixin border-style {
   border-radius: 4rem;
-  border: .1rem solid #39CBFF;
+  border: .2rem solid #39CBFF;
   box-shadow: 0 0 1.8rem 0 #5EECFF inset, 0 0 .4rem 0 #5EECFF inset;
+
+  @media (max-width: 767px) {
+    border-width: .1rem
+  }
 }
