@@ -1,7 +1,7 @@
 @import 'mixins.scss';
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family), sans-serif;
   scroll-behavior: smooth;
 
   @media (max-width: 767px) {
@@ -13,8 +13,33 @@ html {
   }
 }
 
-#app, #app > * {
-  height: inherit;
+body {
+  background-color: #001433;
+}
+
+body, button {
+  color: var(--text-color);
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media(max-width: 767px) {
+    font-size: 2.2rem;
+  }
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-weight: 200;
+
+  @media(max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 
 .wrapper {
@@ -25,7 +50,6 @@ html {
 }
 
 .title {
-  @include font-poppins;
   font-size: 3.9rem;
   line-height: 1;
 

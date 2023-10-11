@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import Button from "../../components/Button";
 import onPlay from "../../utils/onPlay";
 import s from './header/Header.module.scss';
 
@@ -6,17 +7,28 @@ import s from './header/Header.module.scss';
 function Header() {
     return (
         <header className={s._}>
-            <video
-                className={s.video}
-                src="assets/video/PREF_vid002_01_1920х1080_32s_ru.webm"
-                controlsList="nodownload"
-                autoPlay
-                muted
-                loop
-            />
+            {/*<video*/}
+            {/*    className={s.video}*/}
+            {/*    src="assets/video/PREF_vid002_01_1920х1080_32s_ru.webm"*/}
+            {/*    controlsList="nodownload"*/}
+            {/*    autoPlay*/}
+            {/*    muted*/}
+            {/*    loop*/}
+            {/*/>*/}
+
+
             <div className={classNames(s.container, 'wrapper')}>
-                <h1 className={s.title}>Преферанс: игра в карты онлайн</h1>
-                <button type="button" onClick={onPlay} className={s.button}><span>ИГРАТЬ ОНЛАЙН</span></button>
+                <p className={s.description}>Онлайн игра</p>
+                <h1 className={s.title}>Преферанс: <br/> игра в карты</h1>
+
+                <div className={s.buttons}>
+                    <Button onClick={onPlay} className={s.button} playButton>
+                        Играть онлайн
+                    </Button>
+                    <Button onClick={onPlay} className={s.button}>
+                        Скачать приложение
+                    </Button>
+                </div>
             </div>
         </header>
     );

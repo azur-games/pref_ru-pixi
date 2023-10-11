@@ -1,4 +1,5 @@
 import {createBrowserRouter, Outlet, RouterProvider, ScrollRestoration} from "react-router-dom";
+import Nav from "../pages/home_page/Nav";
 import HomePage from "../pages/HomePage";
 import TermsOfUse from "../pages/TermsOfUse";
 
@@ -7,6 +8,7 @@ function Layout() {
     return (
         <>
             <ScrollRestoration/>
+            <Nav/>
             <Outlet/>
         </>
     );

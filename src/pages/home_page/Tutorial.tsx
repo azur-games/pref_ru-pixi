@@ -19,7 +19,7 @@ function Tutorial() {
                         controls
                         src="assets/video/how_to_play.mp4"
                         controlsList="nodownload"
-                        poster="assets/images/Преферанс-1.png"
+                        poster="assets/images/Преферанс-1.webp"
                     />
                 </div>
             </div>

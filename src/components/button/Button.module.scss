@@ -1,7 +1,52 @@
 ._ {
-  @include button;
-  @include button-hover;
-  background-color: #0094E1;
+  @include border-style;
+  padding: 0 3.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: rgba(1, 21, 52, 0.80);
+  transition: .3s ease-out;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  white-space: nowrap;
+
+  svg {
+    width: 1.7rem;
+  }
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  @media(max-width: 767px) {
+    font-size: 1.6rem;
+  }
+}
+
+.big {
+  width: 43rem;
+  height: 6rem;
+  font-size: 2.4rem;
+
+  @media(max-width: 767px) {
+    height: 5rem;
+    font-size: 1.6rem;
+  }
+}
+
+.small {
+  height: 5rem;
   font-size: 1.8rem;
-  padding: 2rem 4rem;
+
+  @media(max-width: 767px) {
+    height: 4.6rem;
+    font-size: 1.4rem;
+  }
+}
+
+.play_button {
+  background: linear-gradient(359deg, #3DFF39 -62.34%, #00E509 -18.08%, #3EFF45 -9.36%, #00AD11 66.41%), linear-gradient(359deg, #39CBFF -62.34%, #00ABE5 -18.08%, #3EC1FF -9.36%, #0073C6 66.41%);
 }

@@ -1,25 +1,28 @@
 import About from "./home_page/About";
-import Apps from "./home_page/Apps";
 import Descriptions from "./home_page/Descriptions";
-import Footer from "./home_page/Footer";
 import Header from "./home_page/Header";
 import s from './home_page/HomePage.module.scss';
-import Nav from "./home_page/Nav";
-import Terms from "./home_page/Terms";
-import Tutorial from "./home_page/Tutorial";
 
 
 function HomePage() {
     return (
         <div className={s._}>
-            <Nav/>
-            <Header/>
-            <About/>
-            <Descriptions/>
-            <Apps/>
-            <Tutorial/>
-            <Footer/>
-            <Terms/>
+
+            <picture className={s.picture}>
+                <source srcSet="assets/images/header_mobile.webp" media="(max-width: 767px)"/>
+                <img src="assets/images/header.webp" alt="header" className={s.image}/>
+            </picture>
+
+            <div className="wrapper">
+                <Header/>
+                <About/>
+                <Descriptions/>
+            </div>
+
+            {/*<Apps/>*/}
+            {/*<Tutorial/>*/}
+            {/*<Footer/>*/}
+            {/*<Terms/>*/}
         </div>
     );
 }

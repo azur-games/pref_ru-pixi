@@ -1,4 +1,11 @@
 ._ {
-  background-color: var(--color-default);
-  //background: url('assets/images/BG.webp') center / cover no-repeat;
+  background: url('assets/images/back.webp') center top  / cover no-repeat;
+}
+
+.picture {
+  position: absolute;
+
+  &, img {
+    width: 100%;
+  }
 }
