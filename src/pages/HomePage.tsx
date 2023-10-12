@@ -1,4 +1,6 @@
 import About from "./home_page/About";
+import Apps from "./home_page/Apps";
+import AppsOther from "./home_page/AppsOther";
 import Descriptions from "./home_page/Descriptions";
 import Header from "./home_page/Header";
 import s from './home_page/HomePage.module.scss';
@@ -17,9 +19,10 @@ function HomePage() {
                 <Header/>
                 <About/>
                 <Descriptions/>
+                <Apps/>
+                <AppsOther/>
             </div>
 
-            {/*<Apps/>*/}
             {/*<Tutorial/>*/}
             {/*<Footer/>*/}
             {/*<Terms/>*/}

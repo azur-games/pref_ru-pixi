@@ -9,6 +9,11 @@
   border-radius: 4rem;
   border: .2rem solid #39CBFF;
   box-shadow: 0 0 1.8rem 0 #5EECFF inset, 0 0 .4rem 0 #5EECFF inset;
+  transition: .3s ease-out;
+
+  &:hover {
+    filter: brightness(1.25);
+  }
 
   @media (max-width: 767px) {
     border-width: .1rem
