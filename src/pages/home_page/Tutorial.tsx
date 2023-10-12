@@ -1,28 +1,25 @@
-import classNames from "classnames";
+import Button from "../../components/Button";
+import onPlay from "../../utils/onPlay";
 import s from "./tutorial/Tutorial.module.scss";
 
 
 function Tutorial() {
     return (
         <section className={s._} id="section-tutorial">
-            <div className={classNames(s.container, 'wrapper')}>
-                <div className={s.text_container}>
-                    <h2 className={classNames(s.title, 'title')}>
-                        Видео-обучение</h2>
-                    <p className={'text-default'}>
-                        Карточные Игры Преферанс Обучение / Правила Игры в Преферанс</p>
-                </div>
+            <h2 className={s.title}>
+                Видео-обучение</h2>
+            <p className="text">
+                Карточные Игры Преферанс Обучение / Правила Игры в Преферанс</p>
 
-                <div className={s.video_container}>
-                    <video
-                        className="elementor-video"
-                        controls
-                        src="assets/video/how_to_play.mp4"
-                        controlsList="nodownload"
-                        poster="assets/images/Преферанс-1.webp"
-                    />
-                </div>
-            </div>
+            <video
+                className={s.video}
+                controls
+                src="assets/video/how_to_play.mp4"
+                controlsList="nodownload"
+                poster="assets/images/Преферанс-1.webp"
+            />
+
+            <Button onClick={onPlay} playButton className={s.button}>Играть онлайн</Button>
         </section>
     );
 }

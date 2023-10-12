@@ -49,3 +49,10 @@
 .play_button {
   background: linear-gradient(359deg, #3DFF39 -62.34%, #00E509 -18.08%, #3EFF45 -9.36%, #00AD11 66.41%), linear-gradient(359deg, #39CBFF -62.34%, #00ABE5 -18.08%, #3EC1FF -9.36%, #0073C6 66.41%);
 }
+
+@media(max-width: 767px) {
+  .big,
+  .small {
+    width: 100%;
+  }
+}
