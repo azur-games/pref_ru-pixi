@@ -1,4 +1,5 @@
 import {createBrowserRouter, Outlet, RouterProvider, ScrollRestoration} from "react-router-dom";
+import Footer from "../pages/home_page/Footer";
 import Nav from "../pages/home_page/Nav";
 import HomePage from "../pages/HomePage";
 import TermsOfUse from "../pages/TermsOfUse";
@@ -10,6 +11,7 @@ function Layout() {
             <ScrollRestoration/>
             <Nav/>
             <Outlet/>
+            <Footer/>
         </>
     );
 }

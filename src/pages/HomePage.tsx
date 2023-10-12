@@ -25,8 +25,6 @@ function HomePage() {
                 <Tutorial/>
             </div>
 
-            {/*<Footer/>*/}
-            {/*<Terms/>*/}
         </div>
     );
 }
