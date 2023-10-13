@@ -1,14 +1,15 @@
 ._ {
-  padding: 6rem 3.2rem 12rem;
+  padding: 3.8rem 3.2rem 12rem;
   background-color: #002357;
-  font-size: 2rem;
-  font-weight: 300;
+
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+  }
 }
 
 .logo {
-  display: grid;
-  place-items: center;
-
   img {
     width: 100%;
   }
@@ -16,7 +17,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 11rem auto 11rem;
+  grid-template-columns: 14.2rem auto 14.2rem;
   place-items: center;
   width: 100%;
 }
@@ -24,14 +25,14 @@
 .text_container {
   display: flex;
 
-  @media(min-width: 1024px) {
+  @media(min-width: 768px) {
     > *:first-child {
       width: 21rem;
       margin-right: 13rem;
     }
 
     > *:last-child {
-      width: 31rem;
+      width: 36rem;
     }
   }
 }
@@ -45,26 +46,31 @@
   height: .1rem;
   background-color: #fff;
   opacity: .2;
-  margin: 2.4rem 0;
+  margin: 1.4rem 0 2.4rem;
 }
 
 .text {
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     > *:first-child {
-      margin-bottom: 2rem;
+      margin-bottom: 2.4rem;
     }
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   ._ {
-    padding: 3.2rem 1.5rem;
-    font-weight: 200;
+    padding: 2.2rem 1.5rem;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 200;
+      line-height: 2.4rem;
+    }
   }
 
   .logo {
-    width: 6.4rem;
-    margin: 0 auto;
+    width: 8.3rem;
+    margin: 0 auto 1.5rem;
   }
 
   .container {
@@ -74,7 +80,11 @@
   .text_container {
     flex-flow: column;
     text-align: center;
-    gap: 1.6rem;
+    gap: 0.3rem;
+  }
+
+  .hr {
+    margin: 2.5rem 0;
   }
 }
 

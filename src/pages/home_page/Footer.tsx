@@ -20,7 +20,7 @@ function Footer() {
 
                     <div className={s.text}>
                         <p>Юридический адрес:</p>
-                        <p>123022 Москва, Столярный</p>
+                        <p>123022 Москва, Столярный пер 3к14</p>
                         <p>Support@azurgames.com</p>
                     </div>
                 </div>

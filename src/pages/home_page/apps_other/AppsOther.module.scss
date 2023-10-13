@@ -2,14 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
+  padding: 4rem 0;
 }
 
 .text_container {
   flex: 1 1 43.2rem;
+
+  p {
+    max-width: 40rem;
+  }
 }
 
 .title {
-  margin-bottom: 4.2rem;
+  margin-bottom: 2.4rem;
 }
 
 
@@ -18,18 +23,21 @@
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
+  padding-top: 1rem;
 }
 
 @media(max-width: 767px) {
+  ._ {
+    padding: 1.4rem 0;
+  }
+
   .links_container {
     flex-wrap: wrap;
-
-    > * {
-      flex: 1;
-    }
   }
 
   .title {
-    margin-bottom: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2.1rem;
   }
 }

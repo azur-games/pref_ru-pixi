@@ -4,11 +4,12 @@
   display: flex;
   gap: 2rem;
   height: 8.3rem;
-  padding: 1.8rem 3.2rem;
+  padding: 1.4rem 3.2rem;
   background: linear-gradient(0deg, #000 0%, #000 100%), linear-gradient(90deg, #39CBFF 0.1%, #0073C6 26.61%, #00ABE5 63.83%, #3EC1FF 88.28%, #0073C6 97.58%);
 }
 
 .icon {
+  padding: .4rem 0;
   height: 100%;
   width: auto;
 }
@@ -23,7 +24,6 @@
 
   &__name {
     font-size: 2.8rem;
-    line-height: 1;
   }
 }
 
@@ -41,4 +41,13 @@
 
 .odnoclassniki {
   min-width: 28.6rem;
+}
+
+@media (max-width: 767px) {
+  ._ {
+    padding: 1.4rem 0;
+    justify-content: center;
+    min-width: 0 !important;
+    flex: 1 0 100%;
+  }
 }

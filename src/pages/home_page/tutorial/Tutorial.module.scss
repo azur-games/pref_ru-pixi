@@ -1,15 +1,12 @@
 ._ {
-  padding: 4rem 0;
+  padding: 2rem 0 9rem;
 }
 
 .title {
   font-size: 8rem;
   font-weight: 600;
   text-transform: uppercase;
-
-  @media(max-width: 767px) {
-    font-size: 3.8rem;
-  }
+  margin-bottom: 1rem;
 }
 
 .video {
@@ -21,12 +18,22 @@
   margin: 4.2rem auto 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
+  ._ {
+    padding: 4rem 0 5.8rem;
+  }
+
+  .title {
+    font-size: 3.8rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+  }
+
   .video {
-    margin-top: 4rem;
+    margin-top: 3.3rem;
   }
 
   .button {
-    margin-top: 3.2rem;
+    margin-top: 2.7rem;
   }
 }

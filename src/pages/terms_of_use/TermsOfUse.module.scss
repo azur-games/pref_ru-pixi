@@ -1,0 +1,33 @@
+._:global(.wrapper) {
+  padding-top: 8rem;
+  padding-bottom: 9rem;
+
+  p {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  padding: 9rem 0;
+}
+
+@media (max-width: 767px) {
+  ._:global(.wrapper) {
+    padding-top: 4.3rem;
+    padding-bottom: 6rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .title {
+    text-align: center;
+    padding: 6rem 0;
+  }
+}

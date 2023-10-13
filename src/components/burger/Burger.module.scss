@@ -1,5 +1,5 @@
 ._ {
-  padding: 1rem;
+  padding: .6rem;
   cursor: pointer;
   transition-timing-function: linear;
   transition-duration: .15s;
@@ -8,13 +8,13 @@
   background-color: transparent;
   display: grid;
   place-items: center;
-  width: 5rem;
+  width: 4.1rem;
 }
 
 .box {
   position: relative;
   display: inline-block;
-  height: 2.4rem;
+  height: 1.4rem;
   width: 100%;
 }
 
@@ -35,7 +35,7 @@
 .inner, .inner:after, .inner:before {
   position: absolute;
   width: inherit;
-  height: .3rem;
+  height: .2rem;
   transition-timing-function: ease;
   transition-duration: .15s;
   transition-property: transform;
@@ -50,7 +50,7 @@
 }
 
 ._ .inner:before {
-  top: 1rem;
+  top: .6rem;
   transition: top .1s cubic-bezier(.33333, .66667, .66667, 1) .2s, transform .13s cubic-bezier(.55, .055, .675, .19);
 }
 
@@ -63,30 +63,19 @@
   content: "";
 }
 
-.inner, .inner:after, .inner:before {
-  position: absolute;
-  width: inherit;
-  height: .3rem;
-  transition-timing-function: ease;
-  transition-duration: .15s;
-  transition-property: transform;
-  border-radius: .4rem;
-  background-color: #fff;
-}
-
 ._ .inner:after {
-  top: 2rem;
+  top: 1.2rem;
   transition: top .2s cubic-bezier(.33333, .66667, .66667, 1) .2s, transform .13s cubic-bezier(.55, .055, .675, .19);
 }
 
 ._.active .inner:after {
-  top: 0;
+  top: -0.4rem;
   transition: top .2s cubic-bezier(.33333, 0, .66667, .33333), transform .13s cubic-bezier(.215, .61, .355, 1) .22s;
   transform: translate3d(0, 1rem, 0) rotate(-45deg);
 }
 
 ._.active .inner:before {
-  top: 0;
+  top: -0.4rem;
   transition: top .1s cubic-bezier(.33333, 0, .66667, .33333) .15s, transform .13s cubic-bezier(.215, .61, .355, 1) .22s;
   transform: translate3d(0, 1rem, 0) rotate(45deg);
 }

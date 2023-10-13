@@ -9,12 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1em;
   white-space: nowrap;
-
-  svg {
-    width: 1.7rem;
-  }
 
   @media(max-width: 767px) {
     font-size: 1.6rem;
@@ -23,15 +18,20 @@
 
 .big {
   width: 43rem;
-  height: 6rem;
+  height: 6.6rem;
   font-size: 2.4rem;
+  gap: 1em;
+
+  svg {
+    width: 1.6rem;
+  }
 
   @media(min-width: 768px) {
     border-width: .3rem;
   }
 
   @media(max-width: 767px) {
-    height: 5rem;
+    height: 5.2rem;
     font-size: 1.6rem;
   }
 }
@@ -39,6 +39,11 @@
 .small {
   height: 5rem;
   font-size: 1.8rem;
+  gap: .6em;
+
+  svg {
+    width: 1.2rem;
+  }
 
   @media(max-width: 767px) {
     height: 4.6rem;

@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import Button from "../../components/Button";
 import onPlay from "../../utils/onPlay";
 import s from './header/Header.module.scss';
@@ -16,19 +15,16 @@ function Header() {
             {/*    loop*/}
             {/*/>*/}
 
+            <p className={s.description}>Онлайн игра</p>
+            <h1 className={s.title}>Преферанс: <br/> игра в карты</h1>
 
-            <div className={classNames(s.container, 'wrapper')}>
-                <p className={s.description}>Онлайн игра</p>
-                <h1 className={s.title}>Преферанс: <br/> игра в карты</h1>
-
-                <div className={s.buttons}>
-                    <Button onClick={onPlay} className={s.button} playButton>
-                        Играть онлайн
-                    </Button>
-                    <Button onClick={onPlay} className={s.button}>
-                        Скачать приложение
-                    </Button>
-                </div>
+            <div className={s.buttons}>
+                <Button onClick={onPlay} className={s.button} playButton>
+                    Играть онлайн
+                </Button>
+                <Button onClick={onPlay} className={s.button}>
+                    Скачать приложение
+                </Button>
             </div>
         </header>
     );
