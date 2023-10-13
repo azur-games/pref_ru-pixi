@@ -22,7 +22,7 @@ function Header() {
                 <Button onClick={onPlay} className={s.button} playButton>
                     Играть онлайн
                 </Button>
-                <Button onClick={onPlay} className={s.button}>
+                <Button href="#apps" className={s.button}>
                     Скачать приложение
                 </Button>
             </div>

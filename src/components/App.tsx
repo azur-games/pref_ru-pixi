@@ -4,11 +4,14 @@ import Footer from "../pages/home_page/Footer";
 import Nav from "../pages/home_page/Nav";
 import HomePage from "../pages/HomePage";
 import TermsOfUse from "../pages/TermsOfUse";
+import CookieAlert from "./CookieAlert";
 
 
 function Layout() {
+
     return (
         <>
+            <CookieAlert/>
             <ScrollRestoration/>
             <Nav/>
             <Outlet/>

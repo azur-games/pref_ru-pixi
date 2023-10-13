@@ -17,3 +17,23 @@
     transition: transform .2s ease-out;
   }
 }
+
+.cookie {
+  &-enter {
+    opacity: 0;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transition: .3s ease-in-out;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+}
