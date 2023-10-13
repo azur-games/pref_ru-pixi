@@ -1,4 +1,5 @@
 import {createBrowserRouter, Outlet, RouterProvider, ScrollRestoration} from "react-router-dom";
+import CookiePolicy from "../pages/CookiePolicy";
 import Footer from "../pages/home_page/Footer";
 import Nav from "../pages/home_page/Nav";
 import HomePage from "../pages/HomePage";
@@ -26,8 +27,12 @@ let routes = [
                 element: <HomePage/>
             },
             {
-                path: "terms_of_use",
+                path: "terms-of-use",
                 element: <TermsOfUse/>,
+            },
+            {
+                path: "cookie-policy",
+                element: <CookiePolicy/>,
             },
         ]
     },
