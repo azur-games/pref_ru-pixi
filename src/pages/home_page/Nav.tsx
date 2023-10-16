@@ -6,10 +6,10 @@ import onPlay from "../../utils/onPlay";
 import useNav from "./nav/_hooks/useNav";
 import Menu from "./nav/Menu";
 import s from "./nav/Nav.module.scss";
-import {UseNav} from "./nav/NavTypes";
+import {NavProps, UseNav} from "./nav/NavTypes";
 
 
-function Nav() {
+function Nav({isShowNav}: NavProps) {
     let {isActive, onClickBurger}: UseNav = useNav();
     const menuRef = useRef();
 
@@ -25,7 +25,8 @@ function Nav() {
                 <Menu ref={menuRef} isActive={isActive} onClickBurger={onClickBurger}/>
             </CSSTransition>
 
-            <div className={cn(s._)}>
+
+            <div className={cn(s._, !isShowNav && s.hidden)}>
                 <div className={s.logo_container}>
                     <a href="/">
                         <img src="assets/icons/logo.png" className={s.logo} alt="logo"/>

@@ -1,3 +1,4 @@
+import {useState} from "react";
 import {createBrowserRouter, Outlet, RouterProvider, ScrollRestoration} from "react-router-dom";
 import CookiePolicy from "../pages/CookiePolicy";
 import Footer from "../pages/home_page/Footer";
@@ -8,14 +9,16 @@ import CookieAlert from "./CookieAlert";
 
 
 function Layout() {
+    let [isShowNav, setIsShowNav] = useState(true);
 
     return (
         <>
             <CookieAlert/>
             <ScrollRestoration/>
-            <Nav/>
+
+            <Nav isShowNav={isShowNav}/>
             <Outlet/>
-            <Footer/>
+            <Footer setIsShowNav={setIsShowNav}/>
         </>
     );
 }

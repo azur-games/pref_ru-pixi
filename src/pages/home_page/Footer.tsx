@@ -1,9 +1,18 @@
 import cn from "classnames";
+import {useEffect} from "react";
+import {useInView} from "react-intersection-observer";
 import {Link} from "react-router-dom";
 import s from "./footer/Footer.module.scss";
+import {FooterProps} from "./footer/FooterTypes";
 
 
-function Footer() {
+function Footer({setIsShowNav}: FooterProps) {
+    const {ref, inView} = useInView();
+
+    useEffect(() => {
+        setIsShowNav(!inView);
+    }, [inView]);
+
     return (
         <footer className={s._}>
             <div className={s.container}>
@@ -29,7 +38,7 @@ function Footer() {
 
             <hr className={s.hr}/>
 
-            <div className={cn(s.text_container, s.down_container)}>
+            <div ref={ref} className={cn(s.text_container, s.down_container)}>
                 <p>© AZUR GAMES</p>
                 <Link to="/terms-of-use">Политика конфиденциальности</Link>
             </div>
