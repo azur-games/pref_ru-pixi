@@ -2,10 +2,14 @@
   padding: 3.8rem 3.2rem 12rem;
   background-color: #002357;
 
-  p {
+  p, a {
     font-size: 2rem;
     font-weight: 300;
     line-height: 3rem;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 
@@ -61,7 +65,7 @@
   ._ {
     padding: 2.2rem 1.5rem;
 
-    p {
+    p, a {
       font-size: 1.6rem;
       font-weight: 200;
       line-height: 2.4rem;
