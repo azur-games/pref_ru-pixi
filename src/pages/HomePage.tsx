@@ -15,6 +15,7 @@ function HomePage() {
                 <source srcSet="assets/images/header_mobile.webp" media="(max-width: 767px)"/>
                 <img src="assets/images/header.webp" alt="header" className={s.image}/>
             </picture>
+            <img className={s.online_card} src="assets/images/online-card.webp" alt="online-card"/>
 
             <div className="wrapper">
                 <Header/>

@@ -9,3 +9,16 @@
     width: 100%;
   }
 }
+
+.online_card {
+  position: absolute;
+  width: 14.3rem;
+  right: 4.5rem;
+  top: 13.6rem;
+}
+
+@media(max-width: 767px) {
+  .online_card {
+    display: none;
+  }
+}
