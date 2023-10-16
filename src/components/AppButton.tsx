@@ -39,9 +39,7 @@ function AppButton({type}: AppButtonProps) {
 
     return (
         <a className={cn(s._, s[type])} href={data.href}>
-            <div>
-                <img src={data.iconSrc} alt={data.name} className={s.icon}/>
-            </div>
+            <img src={data.iconSrc} alt={data.name} className={s.icon}/>
             <div className={s.text}>
                 <p className={s.text__text}>{data.text}</p>
                 <p className={s.text__name}>{data.name}</p>
