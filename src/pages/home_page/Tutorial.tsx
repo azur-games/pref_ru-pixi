@@ -5,7 +5,7 @@ import s from "./tutorial/Tutorial.module.scss";
 
 function Tutorial() {
     return (
-        <section className={s._} id="section-tutorial">
+        <section className={s._} id="tutorial">
             <h2 className={s.title}>
                 Видео-обучение</h2>
             <p className="text">

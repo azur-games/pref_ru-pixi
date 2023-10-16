@@ -46,10 +46,6 @@
     padding: 1rem;
     transition: .2s ease-out;
     font-weight: 300;
-
-    &:hover {
-      filter: drop-shadow(.2rem .4rem .6rem var(--color-shadow)) opacity(.5);
-    }
   }
 }
 

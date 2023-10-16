@@ -7,7 +7,7 @@ import s from "./about/About.module.scss";
 
 function About() {
     return (
-        <section className={cn(s._)} id="section-about">
+        <section className={cn(s._)} id="about">
             <div className={s.container}>
                 <img src={macbook} alt="macbook" className={s.image}/>
 
@@ -18,7 +18,7 @@ function About() {
 
                     <div className={s.buttons}>
                         <Button onClick={onPlay} playButton size={'small'}>Играть онлайн</Button>
-                        <Button size={'small'}>Скачать приложение</Button>
+                        <Button href="#apps" size={'small'}>Скачать приложение</Button>
                     </div>
                 </div>
             </div>
