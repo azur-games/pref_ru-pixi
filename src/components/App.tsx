@@ -41,7 +41,11 @@ let routes = [
     },
 ];
 
-const router = createBrowserRouter(routes);
+// const router = createBrowserRouter(routes);
+
+const router = createBrowserRouter(routes, {
+    basename: process.env.NODE_ENV === 'production' ? '/site_demo' : ''
+});
 
 function App() {
     return (
