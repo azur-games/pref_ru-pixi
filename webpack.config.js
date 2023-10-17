@@ -1,16 +1,17 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 
 module.exports = {
     devtool: "inline-source-map",
-    entry: "./index.tsx",
+    entry: '/',
     // mode: "development",
     output: {
         publicPath: '',
-        path: path.join(__dirname, '/dist/'),
-        filename: '[name].bundle.js',
+        path: path.join(__dirname, '/dist'),
+        filename: '[name].[chunkhash].bundle.js',
         clean: true
     },
     devServer: {
@@ -20,10 +21,12 @@ module.exports = {
         historyApiFallback: true,
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            template: './public/index.html',
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {from: "./src/assets", to: "./assets"},
-                {from: "./public", to: "./"}
             ]
         }),
     ],
@@ -94,5 +97,28 @@ module.exports = {
         ],
         extensions: [".tsx", ".ts", ".js"],
         modules: [path.resolve(__dirname, "node_modules")]
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+            minSize: 20000,
+            minRemainingSize: 0,
+            minChunks: 1,
+            maxAsyncRequests: 30,
+            maxInitialRequests: 30,
+            enforceSizeThreshold: 50000,
+            cacheGroups: {
+                defaultVendors: {
+                    test: /[\\/]node_modules[\\/]/,
+                    priority: -10,
+                    reuseExistingChunk: true,
+                },
+                default: {
+                    minChunks: 2,
+                    priority: -20,
+                    reuseExistingChunk: true,
+                },
+            },
+        },
     },
 };
