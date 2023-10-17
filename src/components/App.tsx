@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {createBrowserRouter, Outlet, RouterProvider, ScrollRestoration} from "react-router-dom";
+import {createHashRouter, Outlet, RouterProvider, ScrollRestoration} from "react-router-dom";
 import CookiePolicy from "../pages/CookiePolicy";
 import Footer from "../pages/home_page/Footer";
 import Nav from "../pages/home_page/Nav";
@@ -44,11 +44,11 @@ let routes = [
     },
 ];
 
-// const router = createBrowserRouter(routes);
+const router = createHashRouter(routes);
 
-const router = createBrowserRouter(routes, {
-    basename: process.env.NODE_ENV === 'production' ? '/site_demo' : ''
-});
+// const router = createBrowserRouter(routes, {
+//     basename: process.env.NODE_ENV === 'production' ? '/site_demo' : ''
+// });
 
 function App() {
     return (
