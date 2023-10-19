@@ -24,13 +24,13 @@ const variant: AppButtonVariant = {
         text: 'найти в',
         name: 'Игры ОК',
         iconSrc: odnoclass,
-        href: '#'
+        href: 'https://ok.ru/game/preferansgame'
     },
     ya: {
         text: 'играть в',
         name: 'Яндекс Игры',
         iconSrc: ya_games,
-        href: '#'
+        href: 'https://yandex.ru/games/app/236266'
     },
 };
 
